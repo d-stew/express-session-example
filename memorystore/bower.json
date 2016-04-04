@@ -1,0 +1,23 @@
+{
+  "name": "sessions",
+  "description": "Express sessions",
+  "main": "app.js",
+  "authors": [
+    "Jonathan Baughn <jonathan.baughn@gmail.com>"
+  ],
+  "license": "SEE LICENSE IN LICENSE.md",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

@@ -1,0 +1,36 @@
+<doctype html>
+<html>
+<head>
+  <title>Express-Session Redis Backend</title>
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <h1>Express-Session Redis Backend</h1>
+      <p>This app is configured to use Redis as a distributed session store.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+	<% if (!!name) { -%>
+	<p>Your name is: <strong><%= name %></strong>.</p>
+	<% } else { -%>
+	<p>Your name is: <strong>UNKNOWN</strong>.</p>
+	<% } -%>
+      </div>
+      <div class="col-md-6">
+	<form class="form" action="store" method="POST">
+	  <label for="name">Name:</label>
+	  <input type="text" name="name"></input>
+	  <button class="btn-lg" type="submit">Submit</button>
+	</form>
+	<br>
+	<form class="form" action="clear" method="POST">
+	  <button class="btn-lg btn-danger" type="submit">Clear Session</button>
+	</form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
