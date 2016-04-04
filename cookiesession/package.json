@@ -1,0 +1,22 @@
+{
+  "name": "sessions",
+  "version": "1.0.0",
+  "description": "Express sessions",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "watch": "nodemon app.js"
+  },
+  "author": "Jonathan Baughn <jonathan.baughn@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-session": "^2.0.0-alpha.1",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.1"
+  }
+}
